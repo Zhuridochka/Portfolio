@@ -1,0 +1,8 @@
+phpmailer/
+node_modules/
+.gitignore/
+Source/
+snnipets.txt/
+undefined
+**/*.zip
+**/*.rar

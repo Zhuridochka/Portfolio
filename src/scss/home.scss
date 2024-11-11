@@ -1,0 +1,137 @@
+//====================================================================================================
+
+//====================================================================================================
+.page {
+
+  // .page__image-bg
+  &__image-bg {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: toRem(720);
+    block-size: toRem(629);
+    aspect-ratio: 720 / 629;
+    object-fit: cover;
+  }
+
+  // .page__image
+  &__image {
+    aspect-ratio: 720 / 629;
+  }
+
+  // .page__hero
+  &__hero {
+    margin-block-end: toRem(140);
+  }
+
+  // .page__projects  
+  &__projects {
+    margin-block-end: toRem(80);
+  }
+}
+
+//=== Hero
+
+.hero {
+  padding-block-start: toRem(54);
+  padding-block-end: toRem(64);
+  // padding-block-end: toRem(111);
+
+  // .hero__container
+  &__container-big {
+    display: flex;
+    align-items: start;
+  }
+
+  // .hero__content
+  &__content {
+    max-inline-size: toRem(650);
+    z-index: 2;
+  }
+
+  // .hero__position
+  &__position {
+    font-size: toRem(20);
+    color: $brandYellow;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:not(:last-child) {
+      margin-block-end: toRem(12);
+    }
+  }
+
+  // .hero__title
+  &__title {
+    font-family: 'Playfair Display', serif;
+    font-size: toRem(64);
+    font-weight: 700;
+    line-height: 110%;
+
+    &:not(:last-child) {
+      margin-block-end: toRem(32);
+    }
+  }
+
+  // .hero__text
+  &__text {
+    font-size: toRem(24);
+    font-weight: 400;
+    line-height: 1.5;
+    /* 36/24 */
+    color: $secondColor;
+
+    &:not(:last-child) {
+      margin-block-end: toRem(32);
+    }
+  }
+
+  // .hero__actions
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(12);
+  }
+
+  // .hero__button
+  &__button {}
+}
+
+//=== Projects
+.projects {
+
+  // .projects__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: toRem(80);
+  }
+
+  // .projects__title
+  &__title {
+    position: relative;
+    padding-block-end: toRem(4);
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset-block-end: 0;
+      inset-inline-start: toRem(46);
+      block-size: toRem(4);
+      inline-size: percent(100, 181);
+      background: $brandYellow;
+      border-radius: toRem(2);
+    }
+  }
+
+  // .projects__items
+  &__items {}
+
+  // .projects__item
+  &__item {
+    &:not(:last-child) {
+      margin-block-end: toRem(80);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.header {
+  background: transparent;
+  padding-block: toRem(18);
+  z-index: 100;
+
+  // .header__container
+  &__container-big {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__logo
+  &__logo {
+    font-family: "Comfortaa", sans-serif;
+    font-size: toRem(18);
+    font-weight: 700;
+    line-height: 180%;
+  }
+
+  // .header__menu
+  &__menu {}
+}

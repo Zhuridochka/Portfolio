@@ -1,0 +1,68 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: toRem(48);
+  font-weight: 700;
+  line-height: 1.5;
+
+  // .title--middle
+  &--middle {
+    font-size: toRem(40);
+  }
+}
+
+//============
+
+.item-project {
+  display: flex;
+  align-items: center;
+  border-radius: toRem(24);
+  box-shadow: 0 toRem(6) toRem(64) 0 rgba(112, 144, 176, 0.10);
+  background: #fff;
+  overflow: hidden;
+
+  // .item-project__content
+  &__content {
+    flex: toRem(496);
+  }
+
+  // .item-project__body  
+  &__body {
+    inline-size: percent(406, 496);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(24);
+  }
+
+  // .item-project__title
+  &__title {}
+
+  // .item-project__text
+  &__text {
+    font-size: toRem(18);
+    font-weight: 400;
+    line-height: 1.5;
+    /* 27/18 */
+  }
+
+  // .item-project__button  
+  &__button {
+    align-self: start;
+  }
+
+  // .item-project__picture
+  &__picture {
+    inline-size: toRem(496);
+    flex: toRem(496);
+    aspect-ratio: 496 / 526;
+    // object-fit: cover;
+  }
+
+  // .item-project__image
+  &__image {
+    aspect-ratio: 496 / 526;
+  }
+}
