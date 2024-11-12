@@ -1,3 +1,95 @@
 //====================================================================================================
 
 //====================================================================================================
+.footer {
+
+  // .footer__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(32);
+    align-items: center;
+    justify-content: center;
+    @include adaptiveValue("padding-block", 88, 20);
+
+    @media (max-width:$mobileSmall) {
+      row-gap: toRem(15);
+    }
+  }
+
+  // .footer__social
+  &__social {}
+
+  // .footer__items
+  &__items {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(24);
+
+    @media (max-width:$mobileSmall) {
+      column-gap: toRem(15);
+    }
+  }
+
+  // .footer__item
+  &__item {
+    inline-size: toRem(48);
+    flex: toRem(48);
+    flex-shrink: 0;
+    aspect-ratio: 1;
+
+    @media (any-hover: hover) {
+      &:hover {
+        .footer__link {
+          &::before {
+            color: $brandYellow;
+            transform: scale(1.1);
+            transition: all 0.3s ease-out;
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .footer__link {
+        &::before {
+          font-size: toRem(36);
+
+          @media (max-width:$mobileSmall) {
+            font-size: toRem(28);
+          }
+        }
+      }
+    }
+
+    @media (max-width:$mobileSmall) {
+      inline-size: toRem(32);
+      flex: toRem(32);
+    }
+  }
+
+  // .footer__link
+  &__link {
+    inline-size: toRem(48);
+    block-size: toRem(48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      color: $mainColor;
+      font-size: toRem(40);
+
+      @media (max-width:$mobileSmall) {
+        font-size: toRem(30);
+      }
+    }
+  }
+
+  // .footer__text
+  &__text {
+    font-size: toRem(16);
+    font-weight: 400;
+    color: $secondColor;
+  }
+}

@@ -7,25 +7,31 @@
 
 	// .menu__body
 	&__body {
-		@media (max-width: $mobile) {
+
+		@media (max-width: $mobileSmall) {
 			position: fixed;
 			width: 100%;
 			height: 100%;
 			left: -100%;
 			top: 0;
 			overflow: auto;
-			padding: toRem(50) toRem(15) toRem(15) toRem(30);
+			padding: toRem(88) toRem(15) toRem(15) toRem(30);
 			transition: left 0.3s;
+
+			@media (max-width:$mobileSmall) {
+				background-color: #f1e177;
+			}
 
 			&::before {
 				content: "";
 				position: fixed;
 				width: 100%;
-				height: toRem(70);
+				height: toRem(68);
 				left: -100%;
 				top: 0;
 				transition: left 0.3s;
 				z-index: 2;
+				background-color: $brandYellow;
 			}
 
 			.menu-open & {
@@ -49,19 +55,54 @@
 		line-height: 1.555556;
 		/* 28/18 */
 
-		@media (max-width: $mobile) {
+		@media (max-width:$tablet) {
+			color: #fff;
+		}
+
+		@media (max-width: toEm(560)) {
+			column-gap: toRem(20);
+		}
+
+		@media (max-width: $mobileSmall) {
 			flex-direction: column;
 			row-gap: toRem(20);
 			font-size: toRem(24);
+			color: $mainColor;
 		}
 	}
 
 	// .menu__item
-	&__item {}
+	&__item {
+		overflow: hidden;
+
+		@media (any-hover: hover) {
+			&:hover {
+				.menu__link {
+					&::after {
+						inline-size: 100%;
+						inset-inline-start: 0%;
+						background-color: currentColor;
+					}
+				}
+			}
+		}
+	}
 
 	// .menu__link
 	&__link {
-		@media (max-width: $mobile) {}
+		position: relative;
+		transition: text-decoration 0.3s;
+		text-decoration: none;
+
+		&::after {
+			position: absolute;
+			content: '';
+			inline-size: 0;
+			block-size: toRem(2);
+			inset-inline-start: 0;
+			inset-block-end: 0;
+			transition: inline-size 0.3s ease-out;
+		}
 	}
 }
 
@@ -69,11 +110,12 @@
 .icon-menu {
 	display: none;
 
-	@media (max-width: $mobile) {
+	@media (max-width: $mobileSmall) {
 		display: block;
 		position: relative;
 		width: toRem(30);
 		height: toRem(18);
+
 		z-index: 5;
 
 		@media (any-hover: none) {
@@ -89,7 +131,7 @@
 			position: absolute;
 			width: 100%;
 			height: toRem(2);
-			background-color: #000;
+			background-color: #fff;
 		}
 
 		&::before {
