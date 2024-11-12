@@ -23,6 +23,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: toRem(20);
+    position: relative;
+    z-index: 5;
   }
 
   // .header__logo
@@ -31,6 +34,11 @@
     font-size: toRem(18);
     font-weight: 700;
     line-height: 180%;
+    z-index: 5;
+
+    @media (max-width:$tablet) {
+      color: #fff;
+    }
   }
 
   // .header__menu

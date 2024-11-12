@@ -44,13 +44,16 @@
 		}
 
 		@media (max-width: toEm(500)) {
-
 			padding-block: toRem(8);
 		}
 	}
 
 	&--view {
 		border-radius: toRem(24);
+
+		@media (max-width: toEm(540)) {
+			font-size: toRem(14);
+		}
 	}
 
 	&--fw {
