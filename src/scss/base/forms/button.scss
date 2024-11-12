@@ -14,12 +14,17 @@
 	transition: all 0.3s;
 	text-align: center;
 	align-items: center;
+	justify-content: center;
 
 	@media (any-hover: hover) {
 		&:hover {
 			background: #f5b410;
 			color: #fff;
 		}
+	}
+
+	@media (max-width: toEm(500)) {
+		border: toRem(2) solid #fff;
 	}
 
 	&--ln {
@@ -32,6 +37,15 @@
 				background: $brandYellow;
 				border: toRem(2) solid $brandYellow;
 			}
+		}
+
+		@media (max-width:$tablet) {
+			border-color: #fff;
+		}
+
+		@media (max-width: toEm(500)) {
+
+			padding-block: toRem(8);
 		}
 	}
 

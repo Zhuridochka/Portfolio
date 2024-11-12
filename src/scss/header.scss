@@ -2,6 +2,21 @@
   background: transparent;
   padding-block: toRem(18);
   z-index: 100;
+  position: relative;
+
+  @media (max-width:$tablet) {
+    &::before {
+      content: '';
+      position: absolute;
+      inline-size: 100%;
+      block-size: 100%;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+      background-color: #000;
+      opacity: 0.4;
+      z-index: 1;
+    }
+  }
 
   // .header__container
   &__container-big {
