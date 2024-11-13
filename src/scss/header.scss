@@ -3,6 +3,7 @@
   padding-block: toRem(18);
   z-index: 100;
   position: relative;
+  inline-size: 100%;
 
   @media (max-width:$tablet) {
     &::before {
@@ -15,7 +16,24 @@
       background-color: #000;
       opacity: 0.4;
       z-index: 1;
+
     }
+  }
+
+  &._header-scroll {
+    position: fixed;
+    inset-block-start: -200%;
+    background-color: #f5b410;
+    padding-block: toRem(10);
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &._header-show {
+    transition: top 0.3s ease 0s;
+    inset-block-start: 0;
   }
 
   // .header__container

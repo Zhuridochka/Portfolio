@@ -10,6 +10,7 @@
 
   // .title--middle
   &--middle {
+    line-height: 1.1;
     @include adaptiveValue("font-size", 40, 22);
   }
 }
@@ -30,6 +31,7 @@
   // .item-project__content
   &__content {
     flex: 50%;
+    padding-block: toRem(20);
 
     @media (max-width: toEm(460)) {
       flex: 100%;
@@ -59,14 +61,15 @@
 
   // .item-project__title
   &__title {
+    text-align: center;
+    padding-inline: toRem(15);
+
     @media (max-width:$mobile) {
       font-weight: 600;
-      line-height: 1.2;
     }
 
     @media (max-width: toEm(540)) {
       font-weight: 500;
-      line-height: 1.1;
     }
   }
 

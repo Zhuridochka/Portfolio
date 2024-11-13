@@ -1,0 +1,109 @@
+//========================================================================================================================================================
+.about {
+
+  // .about__image  
+  &__image {}
+
+  // .about__main
+  &__main {
+    @include adaptiveValue("margin-block-end", 192, 50);
+  }
+}
+
+.main {
+  padding-block-start: toRem(103);
+  border-block-end: toRem(48);
+
+  @media (max-width:$tablet) {
+    padding-block-start: toRem(40);
+  }
+
+  // .main__container-big
+  &__container-big {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: toRem(40);
+
+    @media (max-width:$tablet) {
+      flex-direction: column;
+      row-gap: toRem(60);
+    }
+
+    @media (max-width:$mobileSmall) {
+      align-items: center;
+    }
+  }
+
+  // .main__content
+  &__content {
+    flex-basis: percent(588, 1200);
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(32);
+    z-index: 2;
+
+    @media (max-width:$tablet) {
+      block-size: auto;
+    }
+
+    @media (max-width:$mobileSmall) {
+      text-align: center;
+    }
+  }
+
+  // .main__title
+  &__title {}
+
+  // .main__text
+  &__text {
+    font-size: toRem(24);
+    font-weight: 400;
+    line-height: 1.5;
+    /* 36/24 */
+    color: $secondColor;
+
+    @media (max-width:$mobile) {
+      font-size: toRem(20);
+      line-height: 1.2;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-block-end: toRem(10);
+
+        b {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+
+  // .main__button
+  &__button {
+    align-self: flex-start;
+
+    @media (max-width:$mobileSmall) {
+      inline-size: 100%;
+    }
+  }
+
+  // .main__image-bg  
+  &__image-bg {
+    @media (min-width:toEm(992)) {
+      content: '';
+      position: absolute;
+      inset-block-start: toRem(-58);
+      inset-inline-end: 0;
+      inline-size: toRem(524);
+      flex-basis: toRem(524);
+      aspect-ratio: 1;
+    }
+  }
+
+  // .main__image  
+  &__image {
+    aspect-ratio: 1;
+  }
+}

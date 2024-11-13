@@ -1,6 +1,4 @@
 //====================================================================================================
-
-//====================================================================================================
 .page {
 
   // .page__image-bg
@@ -30,7 +28,7 @@
   }
 }
 
-//=== Hero
+//====================================================================== Hero
 .hero {
   position: relative;
   padding-block-start: toRem(54);
@@ -58,7 +56,7 @@
 
   // .hero__content
   &__content {
-    max-inline-size: toRem(470);
+
     z-index: 2;
 
     @media (max-width:$tablet) {
@@ -89,6 +87,7 @@
     font-size: toRem(64);
     font-weight: 700;
     line-height: 110%;
+    max-inline-size: toRem(550);
 
     &:not(:last-child) {
       margin-block-end: toRem(32);
@@ -107,6 +106,7 @@
     line-height: 1.5;
     /* 36/24 */
     color: $secondColor;
+    max-inline-size: toRem(600);
 
     &:not(:last-child) {
       margin-block-end: toRem(32);
@@ -119,6 +119,12 @@
     @media (max-width:$mobile) {
       font-size: toRem(20);
       line-height: 1.2;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-block-end: toRem(15);
+      }
     }
   }
 
