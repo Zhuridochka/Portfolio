@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"AboutPage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header_ru.htm',{})
+    <main class="about">
+      <section class="about__main main">
+        <div class="main__container-big">
+          <div class="main__content">
+            <h1 class="main__title title">Обо мне</h1>
+            <div class="main__text">
+              <p>
+                <b> Привет! Я – фронтенд-разработчик с огромным желанием создавать современные и удобные web-интерфейсы.</b>
+              </p>
+              <p>
+                Моя специализация – это построение интуитивных, стильных и функциональных web-приложений, которые обеспечивают позитивный опыт пользователей. Я верю в то, что детали имеют значение и поэтому всегда уделяю внимание качеству вёрстки, адаптивности, оптимизации продуктивности и доступности.
+              </p>
+              <p>
+                Применяя HTML, CSS (SCSS) и JavaScript, я создаю интерфейсы, которые соответствуют современным стандартам и требования. От каждого проекта ожидаю лучших решений и всегда стремлюсь совершенствоваться, чтобы приносить пользу как конечным пользователям, так и команде, с которой сотрудничаю.
+              </p>
+            </div>
+            <a href="" class="main__button button">Рeзюме</a>
+          </div>
+          <div class="main__image-bg">
+            <img class="main__image ibg" src="@img/hero/bg-2-hero.png" alt="Image">
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer_ru.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

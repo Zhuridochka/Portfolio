@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"AboutPage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header_en.htm',{})
+    <main class="about">
+      <section class="about__main main">
+        <div class="main__container-big">
+          <div class="main__content">
+            <h1 class="main__title title">About me</h1>
+            <div class="main__text">
+              <p>
+                <b>Hi. I'm a front-end developer with a strong desire to create modern and user-friendly web interfaces.</b>
+              </p>
+              <p>
+                My specialty is building intuitive, stylish, and functional web applications that provide a positive user experience. I believe that details matter, so I always pay attention to the quality of layout, responsiveness, performance optimization, and accessibility.
+              </p>
+              <p>
+                Using HTML, CSS (SCSS) and JavaScript, I create interfaces that meet modern standards and requirements. I expect the best solutions from each project and always strive to improve to benefit both end users and the team I work with.
+              </p>
+            </div>
+            <a href="https://docs.google.com/document/d/1ZayBLdxtamBbC_KTawjmy3XyID0AU27i/edit?usp=sharing&ouid=113768344362417255826&rtpof=true&sd=true" class="main__button button" target="_blank">Resume</a>
+          </div>
+          <div class="main__image-bg">
+            <img class="main__image ibg" src="@img/hero/bg-2-hero.png" alt="Image">
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer_en.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

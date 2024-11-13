@@ -61,4 +61,131 @@
 
   // .header__menu
   &__menu {}
+
+  // .header__actions  
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(20);
+  }
+
+  // .header__lang  
+  &__lang {}
+
+  // .header__icon  
+  &__icon {}
+}
+
+.lang-header {
+  position: relative;
+
+  // .lang-header__current
+  &__current {
+    position: relative;
+    z-index: 2;
+    font-size: toRem(18);
+    font-weight: 500;
+    line-height: 1.263158;
+    /* 24/19 */
+    transition: color 0.8s;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    @media (max-width:$tablet) {
+      color: #fff;
+    }
+
+    &::before {
+      inline-size: toRem(24);
+      height: toRem(24);
+      font-size: toRem(11);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .--active & {
+      color: $brandYellow;
+
+      &::before {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  // .lang-header__list
+  &__list {
+    position: absolute;
+    top: 100%;
+    inline-size: 100%;
+    // padding-block: toRem(10);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      box-shadow: 0 0 toRem(15) 0 rgba(0, 0, 0, 0.12);
+      border-radius: toRem(8);
+      position: absolute;
+      inline-size: calc(100% + toRem(10));
+      height: calc(100% + toRem(34));
+      top: toRem(-34);
+      padding-block-start: toRem(34);
+      left: toRem(-5);
+      background-color: #fff;
+      transition: transform 0.4s;
+    }
+
+    .--active & {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  // .lang-header__item
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      // margin-bottom: toRem(10);
+    }
+  }
+
+  // .lang-header__link
+  &__link {
+    font-size: toRem(19);
+    font-weight: 600;
+    line-height: 1.263158;
+    /* 24/19 */
+    color: grey;
+    transition: color 0.4s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $brandYellow;
+      }
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      .lang-header__current {
+        color: $brandYellow;
+
+        &::before {
+          transform: rotate(-180deg);
+        }
+      }
+
+      .lang-header__list {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    }
+  }
 }

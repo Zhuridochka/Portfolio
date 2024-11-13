@@ -6,7 +6,7 @@
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		@@include('html/_header_ru.htm',{})
 		<main class="page">
 			<div class="page__image-bg">
 				<img class="page__image ibg" src="@img/hero/image_bg.png" alt="Image">
@@ -16,18 +16,19 @@
 					<div class="hero__content">
 						<div class="hero__position">Front-end Developer</div>
 						<h1 class="hero__title">
-							Привіт, мене зовуть Журид Ірина
+							Привет, меня зовут Журид Ирина
 						</h1>
 						<div class="hero__text">
 							<p>
-								Ласкаво прошу до моєї колекції проектів! Тут зібрані роботи, над якими я працювала, створюючи стильні та функціональні інтерфейси з акцентом на якість, зручність та адаптивність. Кожен проект – це новий виклик і можливість для мене вдосконалювати свої навички, експериментувати з новими технологіями та забезпечувати кращий користувацький досвід.
+								Добро пожаловать в мою коллекцию проектов!
+								Здесь собраны роботы, над которыми я работала, создавая стильные и функциональные интерфейсы акцентируя внимание на качестве, удобстве и адаптивности. Каждый проект – это новый вызов и возможность для меня усовершенствовать свои навыки, экспериментировать с новыми технологиями и обеспечивать лучший пользовательский опыт.
 							</p>
 							<p>
-								Я використовую HTML, CSS (SCSS) та JavaScript, щоб створити інтерфейси, які відповідають сучасним стандартам веб-розробки. Сподіваюся, що ви знайдете тут цікаві рішення і зможете побачити мій підхід до розробки.
+								Я использую HTML, CSS (SCSS) и JavaScript, чтобы создавать интерфейсы, которые соответствуют современным стандартам веб-разработки. Надеюсь, что здесь вы найдёте интересные решения и сможете оценить мой подход к разработкам.
 							</p>
 						</div>
 						<div class="hero__actions">
-							<a href="#" data-goto=".page__projects" class="hero__button button">Проекти</a>
+							<a href="#" data-goto=".page__projects" class="hero__button button">Проекты</a>
 							<a href="https://www.linkedin.com/in/iryna-zhuryd-120300275/" class="hero__button button button--ln" target="_blank">LinkedIn</a>
 						</div>
 					</div>
@@ -35,7 +36,7 @@
 			</section>
 			<section id="projects" class="page__projects projects">
 				<div class="projects__container">
-					<h2 class="projects__title title">Проекти</h2>
+					<h2 class="projects__title title">Проекты</h2>
 					<div data-showmore="items" class="projects__block block">
 						<div data-showmore-content="4" class="block__content">
 							<article class="block__item item-project">
@@ -142,14 +143,14 @@
 							</article>
 						</div>
 						<button hidden data-showmore-button type="button" class="block__more button button--ln">
-							<span>Показати ще</span>
-							<span>Сховати</span>
+							<span>Показать ещё</span>
+							<span>Скрыть</span>
 						</button>
 					</div>
 				</div>
 			</section>
 		</main>
-		@@include('html/_footer.htm',{})
+		@@include('html/_footer_ru.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
 </body>
