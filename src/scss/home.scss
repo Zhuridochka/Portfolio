@@ -208,7 +208,7 @@
       @include adaptiveValue("margin-block-end", 80, 20);
     }
 
-    @media (min-width:toEm(461)) {
+    @media (min-width:toEm(581)) {
       &:nth-child(2n+2) {
         flex-direction: row-reverse;
       }
@@ -217,6 +217,8 @@
 
   // .block__more    
   &__more {
-    border-color: $mainColor;
+    @media (max-width:$tablet) {
+      border-color: $mainColor;
+    }
   }
 }

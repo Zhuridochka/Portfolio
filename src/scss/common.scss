@@ -24,7 +24,7 @@
   background: #fff;
   overflow: hidden;
 
-  @media (max-width: toEm(460)) {
+  @media (max-width: toEm(580)) {
     flex-direction: column;
   }
 
@@ -33,7 +33,7 @@
     flex: 50%;
     padding-block: toRem(20);
 
-    @media (max-width: toEm(460)) {
+    @media (max-width: toEm(580)) {
       flex: 100%;
       padding-block-start: toRem(30);
       padding-block-end: toRem(50);
@@ -53,7 +53,7 @@
       row-gap: toRem(15);
     }
 
-    @media (max-width: toEm(460)) {
+    @media (max-width: toEm(580)) {
       inline-size: 100%;
       align-items: center;
     }
@@ -90,7 +90,7 @@
       line-height: 1.1;
     }
 
-    @media (max-width: toEm(460)) {
+    @media (max-width: toEm(580)) {
       align-self: center;
       text-align: center;
       padding-inline: toRem(20);
@@ -101,7 +101,7 @@
   &__button {
     align-self: start;
 
-    @media (max-width: toEm(460)) {
+    @media (max-width: toEm(580)) {
       align-self: center;
     }
   }
@@ -112,7 +112,7 @@
     flex: 50%;
     aspect-ratio: 496 / 526;
 
-    @media (max-width: toEm(460)) {
+    @media (max-width: toEm(580)) {
       inline-size: 100%;
       flex: 100%;
       aspect-ratio: 430 / 300;
@@ -123,7 +123,7 @@
   &__image {
     aspect-ratio: 496 / 526;
 
-    @media (max-width: toEm(460)) {
+    @media (max-width: toEm(580)) {
       aspect-ratio: 430 / 300;
     }
   }

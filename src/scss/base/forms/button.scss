@@ -3,7 +3,7 @@
 
 .button {
 	display: inline-flex;
-	padding: 8px 24px;
+	padding: 6px 24px;
 	font-family: "Roboto", sans-serif;
 	font-size: toRem(18);
 	font-weight: 500;
@@ -15,6 +15,7 @@
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+	border: toRem(2) solid $brandYellow;
 
 	@media (any-hover: hover) {
 		&:hover {
@@ -45,6 +46,24 @@
 
 		@media (max-width: toEm(500)) {
 			padding-block: toRem(8);
+		}
+	}
+
+	&--more {
+
+		background: transparent;
+		border: toRem(2) solid $mainColor;
+		padding-block: toRem(8);
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: $brandYellow;
+				border: toRem(2) solid $brandYellow;
+			}
+		}
+
+		@media (max-width: toEm(500)) {
+			padding-block: toRem(6);
 		}
 	}
 
