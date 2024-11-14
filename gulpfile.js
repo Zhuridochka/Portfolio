@@ -72,15 +72,6 @@ if (process.argv.includes("--nowebp")) {
   );
 }
 
-// Додавання файлів pdf
-const gulp = require("gulp");
-const copy = require("gulp-copy");
-gulp.task("copy-resume", function () {
-  return gulp.src("public/*.pdf").pipe(gulp.dest("dist/public/"));
-});
-
-gulp.task("build", gulp.series("copy-resume"));
-
 // Експорт завдань
 export { html };
 export { css };
