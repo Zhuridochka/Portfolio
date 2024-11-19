@@ -19,7 +19,7 @@
 
   // .page__hero
   &__hero {
-    @include adaptiveValue("margin-block-end", 140, 50);
+    @include adaptiveValue("margin-block-end", 80, 40);
   }
 
   // .page__projects  
@@ -56,7 +56,7 @@
 
   // .hero__content
   &__content {
-
+    position: relative;
     z-index: 2;
 
     @media (max-width:$tablet) {
@@ -84,7 +84,6 @@
   // .hero__title
   &__title {
     font-family: 'Playfair Display', serif;
-    font-size: toRem(64);
     font-weight: 700;
     line-height: 110%;
     max-inline-size: toRem(550);
@@ -94,9 +93,11 @@
     }
 
     @media (max-width:$mobile) {
-      font-size: toRem(50);
+      // font-size: toRem(50);
       font-weight: 600;
     }
+
+    @include adaptiveValue("font-size", 64, 40);
   }
 
   // .hero__text
@@ -159,12 +160,16 @@
     align-items: center;
     row-gap: toRem(80);
 
-    @media (max-width:$mobile) {
+    @media (max-width:$tablet) {
       row-gap: toRem(60);
     }
 
-    @media (max-width:$mobileSmall) {
+    @media (max-width:$mobile) {
       row-gap: toRem(40);
+    }
+
+    @media (max-width:$mobileSmall) {
+      row-gap: toRem(20);
     }
   }
 

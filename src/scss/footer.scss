@@ -10,7 +10,7 @@
     row-gap: toRem(32);
     align-items: center;
     justify-content: center;
-    @include adaptiveValue("padding-block", 88, 20);
+    @include adaptiveValue("padding-block", 60, 20);
 
     @media (max-width:$mobileSmall) {
       row-gap: toRem(15);
