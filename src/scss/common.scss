@@ -142,6 +142,8 @@
 
 //========
 .item-profile {
+  display: flex;
+  flex-direction: column;
   color: $mainColor;
   border-radius: toRem(20) toRem(20) 0 0;
   background: #fff;
@@ -155,12 +157,6 @@
         }
       }
     }
-  }
-
-  // .item-profile__box
-  &__box {
-    display: flex;
-    flex-direction: column;
   }
 
   // .item-profile__wrap  
@@ -205,6 +201,7 @@
 
   // .item-profile__title
   &__title {
+    flex-grow: 1;
     text-align: center;
     padding-inline: toRem(15);
 
@@ -220,6 +217,7 @@
 
 .block {
   padding-inline: toRem(15);
+  padding-block-end: toRem(15);
 
   // .block__content
   &__content {
