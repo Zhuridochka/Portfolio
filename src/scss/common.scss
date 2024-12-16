@@ -1,6 +1,5 @@
 // Заголовки, загальні БЕМ блоки та інше...
 
-
 .title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -12,6 +11,14 @@
   &--middle {
     line-height: 1.1;
     @include adaptiveValue("font-size", 40, 22);
+  }
+
+  &--small {
+    font-family: "Nunito", sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    // font-size: toRem(30);
+    @include adaptiveValue("font-size", 30, 22);
   }
 }
 
@@ -138,6 +145,7 @@
   color: $mainColor;
   border-radius: toRem(20) toRem(20) 0 0;
   background: #fff;
+  box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
 
   @media (any-hover: hover) {
     &:hover {
@@ -197,9 +205,8 @@
 
   // .item-profile__title
   &__title {
-    font-weight: 700;
-    line-height: 1.3125;
-    padding-inline: toRem(5);
+    text-align: center;
+    padding-inline: toRem(15);
 
     /* 21/16 */
     &:not(:last-child) {
@@ -212,16 +219,22 @@
 }
 
 .block {
+  padding-inline: toRem(15);
 
   // .block__content
   &__content {
-    font-size: toRem(15);
-    font-weight: 450;
-    line-height: 1.4;
-    /* 21/15 */
-    color: $whiteColor;
+    font-size: toRem(14);
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: justify;
+    max-block-size: toRem(66);
+    overflow: hidden;
+    color: $mainColor;
     position: relative;
-    padding-inline: toRem(5);
+
+    p {
+      text-indent: toRem(30);
+    }
 
     &:not(:last-child) {
       margin-block-end: toRem(9);
@@ -235,34 +248,21 @@
       inset-block-end: 0;
       inset-inline-start: 0;
       background: linear-gradient(0deg, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0.5) 100%);
-
-      ._showmore-active & {
-        display: none;
-      }
     }
+  }
 
-    &.hide-after {
-      &::after {
-        opacity: 0;
-        visibility: hidden;
+  // .block__more  
+  &__more {
+    font-size: toRem(16);
+    font-weight: 700;
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+        transition: all 0.4s ease 0s;
       }
     }
   }
-}
-
-.content-block {
-  font-size: toRem(14);
-  font-weight: 400;
-  line-height: 1.3;
-  text-align: justify;
-  color: $mainColor;
-
-  p {
-    text-indent: toRem(30);
-  }
-
-  max-block-size: toRem(66);
-  overflow: hidden;
 }
 
 .picture-item {
@@ -309,10 +309,10 @@
     justify-content: center;
     column-gap: toRem(6);
     position: absolute;
-    inset-block-start: toRem(21);
-    inset-inline-end: toRem(25);
+    inset-block-start: toRem(20);
+    inset-inline-end: toRem(20);
     text-align: right;
-    font-size: toRem(16);
+    font-size: toRem(14);
     font-weight: 600;
     line-height: 1.75;
     /* 21/12 */
@@ -320,9 +320,10 @@
     z-index: 2;
     color: $mainColor;
     padding-block: toRem(5);
-    padding-inline: toRem(20);
+    padding-inline: toRem(10);
     background-color: $brandYellow;
     border-radius: toRem(8);
+    box-shadow: 0 7px 20px -7px $brandYellow;
   }
 
   // .picture-item__icon

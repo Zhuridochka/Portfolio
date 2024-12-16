@@ -23,24 +23,32 @@
 	}
 }
 
+._icon-across:before {
+	content: "\e904";
+}
+
+._icon-arrow:before {
+	content: "\e905";
+}
+
 ._icon-arrow-down:before {
-	content: "\e900";
+	content: "\e906";
 }
 
 ._icon-phone:before {
-	content: "\e901";
+	content: "\e909";
 }
 
 ._icon-s-facebook:before {
-	content: "\e902";
+	content: "\e90b";
 }
 
 ._icon-s-instagram:before {
-	content: "\e903";
+	content: "\e90c";
 }
 
 ._icon-s-telegram:before {
-	content: "\e904";
+	content: "\e90e";
 }
 
 ._icon-linkedin:before {
