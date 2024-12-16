@@ -265,9 +265,8 @@
 
 .picture-item {
   position: relative;
-  inline-size: toRem(387);
-  flex-basis: toRem(387);
-  flex-grow: 1;
+  inline-size: 100%;
+  flex-basis: 100%;
   aspect-ratio: 387 / 236;
 
   @media (max-width: toEm(430)) {

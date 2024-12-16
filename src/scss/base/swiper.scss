@@ -12,6 +12,7 @@
 	height: 100%;
 	box-sizing: content-box;
 	display: flex;
+	//align-items: stretch;
 	position: relative;
 }
 
@@ -23,7 +24,7 @@
 
 .swiper-autoheight {
 	.swiper-wrapper {
-		align-items: flex-start;
+		//align-items: flex-start;
 	}
 }
 

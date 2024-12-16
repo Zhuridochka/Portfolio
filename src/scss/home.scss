@@ -193,6 +193,7 @@
   &__button-next {
     position: absolute;
     inset-block-start: toRem(170);
+    // inset-block-start: 35%;
     inline-size: toRem(50);
     block-size: toRem(50);
     border-radius: 50%;
@@ -223,6 +224,10 @@
   &__button-prev {
     inset-inline-start: toRem(20);
 
+    @media (max-width:$tablet) {
+      inset-inline-start: toRem(5);
+    }
+
     &::before {
       transform: rotate(-180deg);
     }
@@ -231,6 +236,10 @@
   // .projects__button-next  
   &__button-next {
     inset-inline-end: toRem(20);
+
+    @media (max-width:$tablet) {
+      inset-inline-end: toRem(5);
+    }
   }
 
   .swiper-button-disabled {

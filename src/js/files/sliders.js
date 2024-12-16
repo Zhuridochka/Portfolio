@@ -40,7 +40,7 @@ function initSliders() {
       observeParents: true,
       slidesPerView: 2.2,
       spaceBetween: 20,
-      //autoHeight: true,
+      autoHeight: true,
       speed: 800,
 
       //touchRatio: 0,
