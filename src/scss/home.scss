@@ -19,12 +19,24 @@
 
   // .page__hero
   &__hero {
-    @include adaptiveValue("margin-block-end", 80, 40);
+
+    // @include adaptiveValue("margin-block-end", 60, 40);
+    @media (max-width:$tablet) {
+      margin-block-end: toRem(60);
+    }
+
+    @media (max-width:$mobile) {
+      margin-block-end: toRem(50);
+    }
+
+    @media (max-width:$mobileSmall) {
+      margin-block-end: toRem(40);
+    }
   }
 
   // .page__projects  
   &__projects {
-    @include adaptiveValue("margin-block-end", 80, 40);
+    @include adaptiveValue("margin-block-end", 60, 40);
   }
 }
 
