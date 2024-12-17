@@ -249,5 +249,18 @@
   }
 
   // .projects__scrollbar  
-  &__scrollbar {}
+  &__scrollbar {
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-end: toRem(-50);
+    inline-size: 100%;
+    block-size: toRem(2);
+    background-color: #dee3e3;
+
+    .swiper-scrollbar-drag {
+      inline-size: 100%;
+      block-size: 100%;
+      background-color: $brandYellow;
+    }
+  }
 }
