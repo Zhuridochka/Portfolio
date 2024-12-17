@@ -11,6 +11,7 @@
 			<div class="page__image-bg">
 				<img class="page__image ibg" src="@img/hero/image_bg.png" alt="Image">
 			</div>
+
 			<section class="page__hero hero">
 				<div class="hero__container-big">
 					<div class="hero__content">
@@ -34,153 +35,155 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="projects" class="page__projects projects">
 				<div class="projects__container">
-					<h2 class="projects__title title">Проекты</h2>
-					<div data-showmore="items" class="projects__block block">
-						<div data-showmore-content="4" class="block__content">
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Портфолио <br>видео-редактора</h3>
-										<div class="item-project__text">
-											<p>
-												Этот проект с акцентом на стиль, плавные анимации и динамические переходы. Верстка подчеркивает креативность видео-редактора, делает просмотре его работ удобным и приятным, обеспечивая адаптивность и современный вид на всех устройствах.
-											</p>
-										</div>
-										<a href="https://alchemist-project.netlify.app/home" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+					<h2 class="projects__title title">Проекти</h2>
+					<div class="projects__content">
+						<div class="projects__slider swiper">
+							<div class="projects__wrapper swiper-wrapper">
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://alchemist-project.netlify.app/home" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg" src="@img/projects/alchemist.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>75$</b></span>
+										</a>
 									</div>
-								</div>
-								<a href="https://alchemist-project.netlify.app/home" class="item-project__picture" target="_blank">
-									<img class="item-project__image ibg ibg--left" src="@img/projects/alchemist_01.jpg" alt="Image">
-								</a>
-							</article>
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Интерфейс<br>админ-пенели</h3>
-										<div class="item-project__text">
-											<p>
-												Разработала интерфейс админ-пенели с таблицей клиентов, которая включает в себя информацию об ихнем статусе, компанию, контакты и страну. На расширении планшетов и меньше, таблица превращается на удобные в пользовании карточки.
-											</p>
+									<h4 class="item-profile__title title title--small">Портфолио видео-редактора</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											Этот проект с акцентом на стиль, плавные анимации и динамические переходы. Вёрстка подчёркивает креативность видео-редактора, делает просмотр удобным и приятным, обеспечивая адаптивность и современный вид на всех устройствах.
 										</div>
-										<a href="https://zhuridochka.github.io/Dashbroad_test/home.html" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+										<button data-popup="#popup-ru" class="block__more" type="button">Подробнее</button>
 									</div>
-								</div>
-								<a href="https://zhuridochka.github.io/Dashbroad_test/home.html" class="item-project__picture" target="_blank">
-									<img class="item-project__image ibg ibg--left" src="@img/projects/Dashbroad.jpg" alt="Image">
-								</a>
-							</article>
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Сайт о здоровье</h3>
-										<div class="item-project__text">
-											<p>
-												В этом проекте реализована форма обратной связи, анимации и плавное появление элементов. Динамика сайта создаёт живой эффект, но не отвлекает, обеспечивая приятный опыт пользователю.
-											</p>
+								</article>
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://zhuridochka.github.io/Dashbroad_test/home.html" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg ibg--left" src="@img/projects/Dashbroad.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>50$</b></span>
+										</a>
+									</div>
+									<h4 class="item-profile__title title title--small">Интерфейс админ-пенели</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											Разработала интерфейс админ-пенели с таблицей клиентов, которая включает в себя информацию об ихнем статусе, компанию, контакты и страну. На расширении планшетов и меньше, таблица превращается на удобные в пользовании карточки.
 										</div>
-										<a href="https://maven-test.netlify.app/home" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+										<button data-popup="#popup--dashbroad-ru" class="block__more" type="button">Подробнее</button>
 									</div>
-								</div>
-								<a href="https://maven-test.netlify.app/home" class="item-project__picture" target="_blank">
-									<img class="item-project__image ibg ibg--top" src="@img/projects/maven_03.jpg" alt="Image">
-								</a>
-							</article>
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Сайт про обучение искусственному интеллекту</h3>
-										<div class="item-project__text">
-											<p>
-												Этот проект демонстрирует современный подход: стильный дизайн с анимацией, пульсирующими кнопками и параллакс-эффектом. Добавлены слайдеры, всплывающие окна и адаптивность для различных устройств, которые обеспечивают комфортный и привлекательный опыт пользователя.
-											</p>
+								</article>
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://maven-test.netlify.app/home" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg ibg--top" src="@img/projects/maven_02.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>80$</b></span>
+										</a>
+									</div>
+									<h4 class="item-profile__title title title--small">Сайт о здоровье</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											В этом проекте реализовано форму обратной связи, анимацию и плавного появления элементов. Динамика сайта создаёт живой эффект, но не отвлекает, обеспечивая приятный опыт пользователя.
 										</div>
-										<a href="https://vera-vla-edu.netlify.app/home" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+										<button data-popup="#popup--maven-ru" class="block__more" type="button">Подробнее</button>
 									</div>
-								</div>
-								<a href="https://vera-vla-edu.netlify.app/home" class="item-project__picture" target="_blank">
-									<img class="item-project__image ibg ibg--top" src="@img/projects/veraVlaEdu_03.jpg" alt="Image">
-								</a>
-							</article>
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Сайт о планировании путешествий</h3>
-										<div class="item-project__text">
-											<p>
-												Этот многостраничный сайт включает асайд-бар, слайдеры, галерею, формы обратной связи и табы для удобства навигации. Плавное появление элементов придаёт динамику, а сложность проекта проявляется в продуманной функциональности и интерактивности каждой частию
-											</p>
+								</article>
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://vera-vla-edu.netlify.app/home" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg ibg--top" src="@img/projects/veraVlaEdu.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>100$</b></span>
+										</a>
+									</div>
+									<h4 class="item-profile__title title title--small">Сайт об учёбе пользования искусственному интеллекту</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											Этот проект демонстрирует современный подход: стильный дизайн с анимацией, пульсирующими кнопками и параллакс-эффектом. Добавлены слайдеры, попапы и адаптивность для разных устройств, что обеспечивает комфортный и привлекательный опыт пользователя.
 										</div>
-										<a href="https://usa-travel-object.netlify.app/home" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+										<button data-popup="#popup--vera-vla-edu-ru" class="block__more" type="button">Подробнее</button>
 									</div>
-								</div>
-								<a href="https://usa-travel-object.netlify.app/home" class="item-project__picture" target="_blank">
-									<img class="item-project__image ibg ibg--left" src="@img/projects/travel-big.jpg" alt="Image">
-								</a>
-							</article>
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Онлайн магазин</h3>
-										<div class="item-project__text">
-											<p>
-												Этот многостраничный онлайн магазин включает в себя различные слайдеры, функцию “показать ещё”, отзывы клиентов, карточку выбора товаров и асайд-бар. Встроенные элементы, такие как количество товаров, чекбоксы, радио-кнопки обеспечивают удобство выбора и покупки.
-											</p>
+								</article>
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://usa-travel-object.netlify.app/home" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg" src="@img/projects/usa-travel.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>100$</b></span>
+										</a>
+									</div>
+									<h4 class="item-profile__title title title--small">Сайт о планировании путешествий</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											Этот многостраничный сайт включает асайд-бар, слайдеры, галерею, формы выбора и табы для удобства навигации. Плавное появление элементов добавляет динамику, а сложность проекта проявляется в продуманной функциональности и интерактивности каждой его части.
 										</div>
-										<a href="https://e-commerce-shopco-project.netlify.app/" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+										<button data-popup="#popup--usa-travel-ru" class="block__more" type="button">Подробнее</button>
 									</div>
-								</div>
-								<a href="https://e-commerce-shopco-project.netlify.app/home" class="item-project__picture" target="_blank">
-									<picture>
-										<source media="(max-width: 580px)" srcset="img/projects/shop-co.jpg">
-										<img class="item-project__image ibg ibg--top" src="@img/projects/shop-co_02.jpg" alt="Image">
-									</picture>
-								</a>
-							</article>
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Сайт про сеть кулинарий</h3>
-										<div class="item-project__text">
-											<p>
-												Этот сайт совмещает в себе элегантный дизайн и сложные элементы оформления, что создает атмосферу вкуса и вдохновения. Формы для обратной связи (чекбоксы, радио-кнопки, поля для мейла и телефона) интегрированы с параллакс-эффектами, которые добавляют динамичности и визуальной привлекательности, делая взаимодействие с сайтом еще более приятной.
-											</p>
+								</article>
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://e-commerce-shopco-project.netlify.app/home" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg ibg--top" src="@img/projects/shop-co.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>120$</b></span>
+										</a>
+									</div>
+									<h4 class="item-profile__title title title--small">Онлайн-магазин</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											Этот многостраничный онлайн-магазин включает различные слайдеры, функцию “показать больше”, отзывы клиентов, карточку выбора товаров и асайд-бар. Встроены такие элементы, как количество товара, чекбоксы, радио-кнопки обеспечивают удобство выбора и покупок.
 										</div>
-										<a href="https://cookie-sait-project.netlify.app/" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+										<button data-popup="#popup--shopco-ru" class="block__more" type="button">Подробнее</button>
 									</div>
-								</div>
-								<a href="https://cookie-sait-project.netlify.app/home" class="item-project__picture" target="_blank">
-									<img class="item-project__image ibg ibg--left" src="@img/projects/cookie_02.jpg" alt="Image">
-								</a>
-							</article>
-							<article class="block__item item-project">
-								<div class="item-project__content">
-									<div class="item-project__body">
-										<h3 class="item-project__title title title--middle">Интернет-магазин мебели</h3>
-										<div class="item-project__text">
-											<p>
-												Этот проект представляет интернет-магазин по изготовлению мебели, созданный с использованием чистого кода без использования конструкторов. Дизайн сайта реализован по макету из Figma, обеспечивает адаптивную верстку и интерактивный функционал, включая каталог товаров, фильтры, корзину и форму заказа. Проект ориентирован на удобство пользователей и скорость закрузки.
-											</p>
+								</article>
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://cookie-sait-project.netlify.app/home" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg ibg--top" src="@img/projects/cookie.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>80$</b></span>
+										</a>
+									</div>
+									<h4 class="item-profile__title title title--small">Сайт о сети кулинарий</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											Этот сайт сочетает элегантный дизайн и сложные элементы оформления, что создаёт атмосферу вкуса и вдохновения. Формы для обратной связи (чекбоксы, радио-кнопки, поля для email и телефона) интегрированы с параллакс-эффектами, что добавляет динамики и визуальную привлекательность, делая взаимодействие с сайтом более приятной.
 										</div>
-										<a href="https://vella-stor.netlify.app/" class="item-project__button button button--view" target="_blank">Просмотреть проект</a>
+										<button data-popup="#popup--cookie-ru" class="block__more" type="button">Подробнее</button>
 									</div>
-								</div>
-								<a href="https://vella-stor.netlify.app/home" class="item-project__picture" target="_blank">
-									<img class="item-project__image ibg ibg--left" src="@img/projects/Vella.jpg" alt="Image vella-store">
-								</a>
-							</article>
+								</article>
+
+								<article class="item-profile__slide item-profile swiper-slide">
+									<div class="item-profile__wrap">
+										<a href="https://vella-stor.netlify.app/home" class="item-profile__picture picture-item" target="_blank">
+											<img class="picture-item__image ibg ibg--top" src="@img/projects/Vella.jpg" alt="Image">
+											<span class="picture-item__price">Цена: от <b>200$</b></span>
+										</a>
+									</div>
+									<h4 class="item-profile__title title title--small">Интернет-магазин мебели</h4>
+									<div class="item-profile__block block">
+										<div class="block__content">
+											Этот проект представляет интернет-магазин по изготовлению мебели, созданный с использованием чистого кода без использования конструкторов. Дизайн сайта реализован по макету из Figma, обеспечивает адаптивную верстку и интерактивный функционал, включая каталог товаров, фильтры, корзину и форму заказа. Проект ориентирован на удобство пользователей и скорость закрузки.
+										</div>
+										<button data-popup="#popup--vella-ru" class="block__more" type="button">Подробнее</button>
+									</div>
+								</article>
+
+							</div>
+							<button type="button" class="projects__button-prev swiper-button-prev _icon-arrow"></button>
+							<button type="button" class="projects__button-next swiper-button-next _icon-arrow"></button>
+							<div class="projects__scrollbar swiper-scrollbar"></div>
 						</div>
-						<button hidden data-showmore-button type="button" class="block__more button button--ln">
-							<span>Показать ещё</span>
-							<span>Скрыть</span>
-						</button>
 					</div>
 				</div>
 			</section>
+
 		</main>
 		@@include('html/_footer_ru.htm',{})
 	</div>
+	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
 </body>
 
