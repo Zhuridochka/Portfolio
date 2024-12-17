@@ -96,7 +96,7 @@ body::after {
 
 // .popup__title
 .popup__title {
-	margin-block-end: toRem(50);
+	margin-block-end: toRem(30);
 
 	@media (max-width: toEm(702)) {
 		margin-block-end: toRem(20);
@@ -158,18 +158,44 @@ body::after {
 	box-shadow: 0 7px 20px -7px $brandYellow;
 }
 
-.popup__text {
+.popup__lead {
 	font-size: toRem(15);
 	line-height: 1.6;
 	/* 24/15 */
 	color: $mainColor;
 	font-weight: 500;
 
-	p {
-		&:not(:last-child) {
-			margin-block-end: toRem(25);
-		}
+	&:not(:last-child) {
+		margin-block-end: toRem(20);
 	}
+}
+
+.popup__caption {
+	font-size: toRem(20);
+	font-weight: 800;
+
+	&:not(:last-child) {
+		margin-block-end: toRem(8);
+	}
+}
+
+.popup__list {}
+
+.popup__item {
+	margin-block-end: toRem(10);
+	line-height: normal;
+}
+
+.popup__item p {
+	&:not(:last-child) {
+		margin-block-end: toRem(10);
+	}
+}
+
+.popup ul,
+.popup li {
+	list-style-type: disc;
+	padding-inline-start: toRem(15);
 }
 
 // .popup__form
