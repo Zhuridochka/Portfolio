@@ -3,6 +3,7 @@ node_modules/
 .gitignore/
 Source/
 snnipets.txt/
+dist/
 undefined
 **/*.zip
 **/*.rar
