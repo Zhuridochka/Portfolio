@@ -95,21 +95,11 @@
 
   // .hero__title
   &__title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    line-height: 110%;
     max-inline-size: toRem(550);
 
     &:not(:last-child) {
       margin-block-end: toRem(32);
     }
-
-    @media (max-width:$mobile) {
-      // font-size: toRem(50);
-      font-weight: 600;
-    }
-
-    @include adaptiveValue("font-size", 64, 40);
   }
 
   // .hero__text

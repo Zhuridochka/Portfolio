@@ -79,6 +79,7 @@
     &::before {
       color: $mainColor;
       font-size: toRem(40);
+      transition: all 0.3s ease-out;
 
       @media (max-width:$mobileSmall) {
         font-size: toRem(30);

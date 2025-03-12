@@ -1,11 +1,21 @@
 // Заголовки, загальні БЕМ блоки та інше...
-
+//=== Title
 .title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 1.5;
 
   @include adaptiveValue("font-size", 48, 28);
+
+  &--big {
+    line-height: 110%;
+
+    @media (max-width:$mobile) {
+      font-weight: 600;
+    }
+
+    @include adaptiveValue("font-size", 64, 40);
+  }
 
   // .title--middle
   &--middle {
@@ -22,7 +32,7 @@
   }
 }
 
-//============
+//=== Item-project
 .item-project {
   display: flex;
   align-items: center;
@@ -140,7 +150,7 @@
   }
 }
 
-//========
+//=== Item-profile
 .item-profile {
   display: flex;
   flex-direction: column;
